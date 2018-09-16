@@ -55,7 +55,7 @@ WeaponData
 	"PenetrationPower"			"20"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"1500"
+	"Damage"			"2000"
 	"Range"				"5000"
 	"RangeModifier"			"2.5"
 	"GainRange"			"3000"	// range at which to use a gain curve to fall off to zero
