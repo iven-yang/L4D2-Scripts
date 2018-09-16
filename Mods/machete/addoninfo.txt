@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+    addonSteamAppID        550
+    addontitle             "Custom HUD icon for Halo 4 Energy Sword"
+    addonversion           "1.0"
+    addonauthor            "CCPD"
+    addonDescription       "Replaces the Machete HUD icon with an icon for Halo 4 Energy Sword. Changes stats."
+}

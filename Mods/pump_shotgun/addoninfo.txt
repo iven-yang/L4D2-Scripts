@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+    addonSteamAppID        550
+    addontitle             "Custom HUD icon for Halo Reach M45 Tactical Shotgun"
+    addonversion           "1.0"
+    addonauthor            "CCPD"
+    addonDescription       "Replaces the Pump Shotgun HUD icon with an icon for Halo Reach M45 Tactical Shotgun. Changes stats."
+}

@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+    addonSteamAppID        550
+    addontitle             "Custom HUD icon for Halo 4 M45D Shotgun"
+    addonversion           "1.0"
+    addonauthor            "CCPD"
+    addonDescription       "Replaces the Chrome Shotgun HUD icon with an icon for Halo 4 M45D Shotgun. Changes stats."
+}
