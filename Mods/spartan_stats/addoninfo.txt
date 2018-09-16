@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+    addonSteamAppID     550
+	addontitle			"Spartan Stats"
+	addonversion	    2
+	addonauthor 		"DioBrandDough"
+	addonDescription 
+"Power Overwhelming"
+addonContent_Script 1
+}
