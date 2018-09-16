@@ -1,0 +1,2054 @@
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"		"1.6"
+	"SpreadPerShot"		"1.3"
+	"MaxSpread"		"8"
+	"SpreadDecay"		"8"
+	"MinDuckingSpread"		"1"
+	"MinStandingSpread"		"1.3"
+	"MinInAirSpread"		"1.5"
+	"MaxMovementSpread"	"2.5" 
+	"ReloadDuration"		"-1"
+	"AddonAttachment"		"primary"
+	"Team" 					"Survivor"
+	
+	"Tier"					"0"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"GrenadeLauncher"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_rifle"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"2.5"
+	
+	"DisplayName"				"#L4D_Weapon_GrenadeLauncher"
+	"DisplayNameAllCaps"		"#L4D_Weapon_GrenadeLauncher_CAPS"
+	
+	"NewInL4D2"				"1"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"			"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"5"
+
+	"MaxPlayerSpeed" 		"230" 
+	"WeaponType" 			"grenade_launcher"
+	"WeaponPrice" 			"3100"
+	"WeaponArmorRatio" 		"1.4"
+	"CrosshairMinDistance" 		"4"
+	"CrosshairDeltaDistance" 	"3"
+	"BuiltRightHanded" 		"1"
+	"PlayerAnimationExtension" 	"m4"
+
+	"CanEquipWithShield"		"0"
+	
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"1"
+	"PenetrationPower"			"10"
+	"PenetrationMaxDistance"	"0"	// none
+
+	"Damage"			"2000"
+	"Range"				"10000"
+	"RangeModifier"			"2.5"
+	"GainRange"			"9999"	// range at which to use a gain curve to fall off to zero
+	"Bullets"			"1"
+	"CycleTime"			"0.95"
+
+	"TimeToIdle"			"1.5"
+	"IdleInterval"			"60"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"				"_Grenade Launcher_"
+	
+	"playermodel"			"models/w_models/weapons/w_grenade_launcher.mdl"
+	"viewmodel"				"models/v_models/v_grenade_launcher.mdl"
+	
+	"CharacterViewmodelAddon"
+	{
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
+	}
+
+	"anim_prefix"		"anim"
+	"bucket"			"0"
+	"bucket_position"	"0"
+
+	"clip_size"			"2"
+	
+	"primary_ammo"		"AMMO_TYPE_GRENADELAUNCHER"
+	"secondary_ammo"	"None"
+
+	"weight"			"25"
+	"item_flags"		"0"
+
+	"LoadoutSlots"		"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"GrenadeLauncher.Fire"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"0"
+				"y"			"256"
+				"width"		"148"
+				"height"	"64"
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"384"
+				"y"			"128"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-10 -2 -13"
+			Maxs	"30 10 0"
+		}
+		World
+		{
+			Mins	"-8 -9 -6"
+			Maxs	"29 9 8"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"			"2.25"
+	"SpreadPerShot"			"1"
+	"MaxSpread"				"10"
+	"SpreadDecay"			"8"
+	"AddonAttachment"		"primary"
+	"Team"					"Survivor"
+
+	"Tier"					"2"		// valid entries are 0, 1, 2
+
+	"ResponseRulesName"		"HuntingRifle"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_huntingrifle_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_huntingrifle"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_rifle"
+
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"3.5"
+
+	"DisplayName"				"#L4D_Weapon_HuntingRifle"
+	"DisplayNameAllCaps"		"#L4D_Weapon_HuntingRifle_CAPS"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"6.0"
+	"MaxAutoAimRange1"				"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"MaxPlayerSpeed"		"230"
+	"WeaponType"			"sniper_rifle"
+	"WeaponPrice"			"4200"
+	"WeaponArmorRatio"		"1.45"
+	"CrosshairMinDistance"		"5"
+	"CrosshairDeltaDistance"	"3"
+	"BuiltRightHanded"		"1"
+	"PlayerAnimationExtension"	"sg550"
+	"CanEquipWithShield"		"0"
+
+	"Rumble"			"2"
+
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"10"
+	"PenetrationPower"			"500"
+	"PenetrationMaxDistance"	"0"	// none
+	"CharacterPenetrationMaxDistance" "8192" // Shooting through infected is doesn't count against penetration count out to this range
+
+	"Damage"			"360"
+	"Range"				"8192"
+	"RangeModifier"			"1.0"
+	"Bullets"			"1"
+	"CycleTime"			"0.25"
+	"AccuracyDivisor"		"-1"
+	"AccuracyOffset"		"0"
+	"MaxInaccuracy"			"0"
+	"TimeToIdle"			"1.8"
+	"IdleInterval"			"60"
+
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Hunting Rifle"
+	"playermodel"		"models/w_models/weapons/w_sniper_mini14.mdl"
+
+	"viewmodel"			"models/v_models/v_huntingrifle.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
+		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
+		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
+		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"15"
+
+	"primary_ammo"			"AMMO_TYPE_HUNTINGRIFLE"
+	"secondary_ammo"		"None"
+
+	"weight"			"20"
+	"item_flags"			"0"
+
+	"LoadoutSlots"	"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"HuntingRifle.Fire"
+		"special3"			"HuntingRifle.Zoom"
+		"shoot_incendiary"	"HuntingRifle.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"320"
+				"y"			"384"
+				"width"		"192"
+				"height"	"64"
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"384"
+				"y"			"448"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-3 -3 -12"
+			Maxs	"40 14 -1"
+		}
+		World
+		{
+			Mins	"-7 -8 -3"
+			Maxs	"32 9 9"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"			"3.5"
+	"SpreadPerShot"			"1"
+	"MaxSpread"			"10"
+	"SpreadDecay"			"5"
+	"MinDuckingSpread"		"0.5"
+	"MinStandingSpread"		"1"
+	"MinInAirSpread"		"1.5"
+	"MaxMovementSpread"		"1.8"
+	"DeployDuration"		"0.5"
+	"DualDeployDuration"		"0.65"
+	"AddonAttachment"		"pistol"
+	"addon_offset"			"2 0 -2"
+	"addon_angles"			"0 0 0"	
+	"Team" 					"Survivor"
+	
+	"Tier"					"0"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"magnum"
+
+	// particle muzzle flash effect to play when fired	
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_shotgun_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_autoshotgun"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_9mm"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"0.8"
+	
+	"DisplayName"			"#L4D_Weapon_magnum"
+	"DisplayNameAllCaps"		"#L4D_Weapon_magnum_CAPS"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"			"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"MaxPlayerSpeed"		"250"
+	"WeaponType"			"pistol"
+	"WeaponPrice"			"500"
+	"WeaponArmorRatio"		"1.0"
+	"CrosshairMinDistance"		"8"
+	"CrosshairDeltaDistance" 	"3"
+	"BuiltRightHanded" 		"1"
+	"PlayerAnimationExtension" 	"pistol"
+	"MuzzleFlashScale"		"1"
+	
+	"CanEquipWithShield" 		"1"
+	"NoiseFactor" 			"350"
+
+	"Rumble"			"1"
+	
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"2"
+	"PenetrationPower"		"50"
+	"PenetrationMaxDistance"	"0"	// none
+
+	"Damage"			"144"
+	"Range"				"6000"
+	"RangeModifier"			"1"
+	"Bullets"			"1"
+	//"CycleTime"			"0.15"
+	"CycleTime"			"0.25"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Magnum"
+	
+	"playermodel"			"models/w_models/weapons/w_desert_eagle.mdl"
+	
+	"viewmodel"			"models/v_models/v_desert_eagle.mdl"
+
+	"CharacterViewmodelAddon"
+	{
+		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
+		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
+		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
+		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"1"
+	"bucket_position"		"0"
+
+	"clip_size"			"12"
+	
+	// custom ammo - adds dismemberment, and full damage on expert to kill infected
+	"primary_ammo"			"AMMO_TYPE_PISTOL_MAGNUM"
+	"secondary_ammo"		"None"
+
+	"weight"			"5"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+
+	SoundData
+ 	{
+  		"single_shot"  "Magnum.Fire"
+ 	}
+	
+// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"320"
+				"y"			"256"
+				"width"		"64"
+				"height"	"64"
+		}
+		"weapon_dual"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"192"
+				"y"			"320"
+				"width"		"64"
+				"height"	"64"
+		}
+		"ammo"
+		{
+				"font"		"DebugFixed"
+				"character"	"A"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-7 -4 -14"
+			Maxs	"24 9 -2"
+		}
+		World
+		{
+			Mins	"-1 -4 -3"
+			Maxs	"17 5 6"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"			"3.5"
+	"SpreadPerShot"			"1"
+	"MaxSpread"			"10"
+	"SpreadDecay"			"4"
+	"MinDuckingSpread"		"0.5"
+	"MinStandingSpread"		"0.8"
+	"MinInAirSpread"		"1.5"  //increased accuracy
+	"MaxMovementSpread"		"1.5"  //increased accuracy
+	"PelletScatterPitch"		"4.5"  //increased accuracy
+	"PelletScatterYaw"		"4.5"
+	"ReloadDuration"		"0.473"
+	"AddonAttachment"		"primary"
+	"Team"					"Survivor"
+	
+	"Tier"					"1"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"PumpShotgun"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_shotgun_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_autoshotgun"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_shotgun"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"2.5"
+	
+	"DisplayName"			"#L4D_Weapon_PumpShotgun"
+	"DisplayNameAllCaps"	"#L4D_Weapon_PumpShotgun_CAPS"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"				"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"5"
+
+	"MaxPlayerSpeed" 		"220"
+	"WeaponType"			"shotgun"
+	"WeaponPrice"			"1700"
+	"WeaponArmorRatio"		"1.0"
+	"CrosshairMinDistance"		"8"
+	"CrosshairDeltaDistance"	"6"
+	"BuiltRightHanded"		"1"
+	"PlayerAnimationExtension" 	"m3s90"
+	"MuzzleFlashScale"		"1.3"
+	
+	"CanEquipWithShield"	"0"
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"4"
+	"PenetrationPower"			"80"
+	"PenetrationMaxDistance"	"500"
+	"CharacterPenetrationMaxDistance" "300" // Shooting through infected is doesn't count against penetration count out to this range
+
+	"Damage"			"90"	// 22
+	"Range"				"7000"
+	"RangeModifier"		"1"	// 0.96
+	"Bullets"			"12"
+	"CycleTime"			"0.5"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Pump Shotgun"	
+	"playermodel"		"models/w_models/weapons/w_shotgun.mdl"
+	
+	"viewmodel"			"models/v_models/v_pumpshotgun.mdl"
+
+	"CharacterViewmodelAddon"
+	{
+		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
+		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
+		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
+		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"8"
+	
+	"primary_ammo"			"AMMO_TYPE_SHOTGUN"
+	"secondary_ammo"		"None"
+
+	"weight"			"20"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Shotgun.Fire"
+		//"reload"		"Shotgun.WorldReloadShell"
+		//"reload_pump"		"Shotgun.WorldReloadPump"
+		"shoot_incendiary"	"Shotgun.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"320"
+				"y"			"320"
+				"width"		"192"
+				"height"	"64"	
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"0"
+				"y"			"128"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-13 -3 -13"
+			Maxs	"26 10 -3"
+		}
+		World
+		{
+			Mins	"-9 -8 -5"
+			Maxs	"28 9 9"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"		"1.431"
+	"SpreadPerShot"		"1.231"   
+	"MaxSpread"		"15"
+	"SpreadDecay"		"7.7724"		
+	"MinDuckingSpread"		"1"	
+	"MinStandingSpread"		"1.5" 	
+	"MinInAirSpread"		"2.5"
+	"MaxMovementSpread"	"4"
+	"AddonAttachment"		"primary"
+	"Team" 					"Survivor"
+	
+	"Tier"					"2"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"Rifle_AK47"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_smg_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_smg"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_rifle"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"0.35"
+	
+	"DisplayName"				"#L4D_Weapon_Rifle_AK47"
+	"DisplayNameAllCaps"		"#L4D_Weapon_Rifle_AK47_CAPS"
+	
+	"NewInL4D2"				"1"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"			"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"4"
+
+	"MaxPlayerSpeed" 		"230" 
+	"WeaponType" 			"pistol"
+	"WeaponPrice" 			"3100"
+	"WeaponArmorRatio" 		"1.4"
+	"CrosshairMinDistance" 		"4"
+	"CrosshairDeltaDistance" 	"3"
+	"BuiltRightHanded" 		"1"
+	"PlayerAnimationExtension" 	"m4"
+
+	"CanEquipWithShield"		"0"
+	
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"3.96"
+	"PenetrationPower"			"79.2"
+	"PenetrationMaxDistance"	"0"	// none
+
+	"Damage"			"175"	//was 33
+	"Range"				"5000"
+	"RangeModifier"			"0.90"
+	"GainRange"			"3500"	// range at which to use a gain curve to fall off to zero
+	"Bullets"			"1"
+	"CycleTime"			"0.09"
+
+	"TimeToIdle"			"1.5"
+	"IdleInterval"			"60"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Assault Rifle"
+
+	"playermodel"			"models/w_models/weapons/w_rifle_ak47.mdl"
+	
+	"viewmodel"			"models/v_models/v_rifle_AK47.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"40"   //was 50
+	
+	"primary_ammo"			"AMMO_TYPE_SMG"
+	"secondary_ammo"		"None"
+
+	"weight"			"25"
+	"item_flags"			"0"
+
+	"LoadoutSlots"	"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"AK47.Fire"
+		"shoot_incendiary"	"AK47.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"128"
+				"y"			"384"
+				"width"		"192"
+				"height"	"64"	
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"384"
+				"y"			"448"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-10 -2 -13"
+			Maxs	"30 10 0"
+		}
+		World
+		{
+			Mins	"-8 -9 -6"
+			Maxs	"29 9 8"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"			"2.0"
+	"SpreadPerShot"			"0.6"
+	"MaxSpread"				"25"
+	"SpreadDecay"			"4"
+	"MinDuckingSpread"		"0.05"
+	"MinStandingSpread"		"0.35"
+	"MinInAirSpread"		"1.25"
+	"MaxMovementSpread"		"2.5"
+	"AddonAttachment"		"primary"
+	"Team" 					"Survivor"
+	
+	"Tier"					"2"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"Rifle_Desert"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_assaultrifle_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_assaultrifle"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_rifle"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"0.35"
+	
+	"DisplayName"				"#L4D_Weapon_DesertRifle"
+	"DisplayNameAllCaps"		"#L4D_Weapon_DesertRifle_CAPS"
+	
+	"NewInL4D2"				"1"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"			"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"4"
+
+	"MaxPlayerSpeed" 		"240" 
+	"WeaponType" 			"rifle"
+	"WeaponPrice" 			"3100"
+	"WeaponArmorRatio" 		"1.4"
+	"CrosshairMinDistance" 		"4"
+	"CrosshairDeltaDistance" 	"3"
+	"BuiltRightHanded" 		"1"
+	"PlayerAnimationExtension" 	"m4"
+
+	"CanEquipWithShield"		"0"
+	
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"8"
+	"PenetrationPower"			"100"
+	"PenetrationMaxDistance"	"0"	// none
+
+	"Damage"			"176" // 44
+	"Range"				"8000"
+	"RangeModifier"			"1.5"
+	"GainRange"			"6500"	// range at which to use a gain curve to fall off to zero
+	"Bullets"			"1"
+	"CycleTime"			"0.07"
+
+	"TimeToIdle"			"1.5"
+	"IdleInterval"			"60"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"				"Assault Rifle"
+
+	"playermodel"			"models/w_models/weapons/w_desert_rifle.mdl"
+	
+	"viewmodel"				"models/v_models/v_desert_rifle.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
+		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
+		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
+		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"36"
+	
+	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
+	"secondary_ammo"		"None"
+
+	"weight"			"25"
+	"item_flags"			"0"
+
+	"LoadoutSlots"	"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Rifle_Desert.Fire"
+		"shoot_incendiary"	"Rifle_Desert.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"224"
+				"y"			"128"
+				"width"		"160"
+				"height"	"64"
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"384"
+				"y"			"448"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-10 -2 -13"
+			Maxs	"30 10 0"
+		}
+		World
+		{
+			Mins	"-8 -9 -6"
+			Maxs	"29 9 8"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"		"0.1"
+	"SpreadPerShot"		"0.15"   
+	"MaxSpread"		"1"
+	"SpreadDecay"		"0.15"		
+	"MinDuckingSpread"		"0.1"	
+	"MinStandingSpread"		"0.15" 	
+	"MinInAirSpread"		"0.2"
+	"MaxMovementSpread"	"0.25"
+	"AddonAttachment"		"primary"
+	"Team" 					"Survivor"
+	
+	"Tier"					"2"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"M60"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_assaultrifle_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_assaultrifle"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_rifle"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"0.35"
+	
+	"DisplayName"				"#L4D_Weapon_M60"
+	"DisplayNameAllCaps"		"#L4D_Weapon_M60"
+	
+	"NewInL4D2"				"1"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"			"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"4"
+
+	"MaxPlayerSpeed" 		"230" 
+	"WeaponType" 			"rifle"
+	"WeaponPrice" 			"3100"
+	"WeaponArmorRatio" 		"1.4"
+	"CrosshairMinDistance" 		"4"
+	"CrosshairDeltaDistance" 	"3"
+	"BuiltRightHanded" 		"1"
+	"PlayerAnimationExtension" 	"m4"
+
+	"CanEquipWithShield"		"0"
+	
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"6"
+	"PenetrationPower"			"100"
+	"PenetrationMaxDistance"	"0"	// none
+
+	"Damage"			"200"
+	"Range"				"10000"
+	"RangeModifier"			"0.95"
+	"GainRange"			"7500"	// range at which to use a gain curve to fall off to zero
+	"Bullets"			"1"
+	"CycleTime"			"0.03"
+
+	"TimeToIdle"			"1.5"
+	"IdleInterval"			"60"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"M60"
+
+	"playermodel"			"models/w_models/weapons/w_m60.mdl"
+	
+	"viewmodel"			"models/v_models/v_m60.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"2500"
+	
+	"primary_ammo"			"AMMO_TYPE_M60"
+	"secondary_ammo"		"None"
+
+	"weight"			"25"
+	"item_flags"			"0"
+
+	"LoadoutSlots"	"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"M60.Fire"
+		"shoot_incendiary"	"M60.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet_dlc1"
+				"x"			"0"
+				"y"			"0"
+				"width"		"256"
+				"height"	"64"	
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"384"
+				"y"			"448"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-10 -2 -13"
+			Maxs	"30 10 0"
+		}
+		World
+		{
+			Mins	"-8 -9 -6"
+			Maxs	"29 9 8"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"		"2.5"
+	"SpreadPerShot"		"1.2"
+	"MaxSpread"		"6"
+	"SpreadDecay"		"5.5"
+	"MinDuckingSpread"		"0.5"
+	"MinStandingSpread"		"1"
+	"MinInAirSpread"		"2"
+	"MaxMovementSpread"	"2" 
+	"PelletScatterPitch"		"3"  
+	"PelletScatterYaw"		"3"
+	"ReloadDuration"		"0.473"
+	"AddonAttachment"		"primary"
+	"Team"					"Survivor"
+	
+	"Tier"					"1"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"Shotgun_Chrome"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_shotgun_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_autoshotgun"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_shotgun"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"2.5"
+	
+	"DisplayName"			"#L4D_Weapon_PumpShotgun"
+	"DisplayNameAllCaps"	"#L4D_Weapon_PumpShotgun_CAPS"
+	
+	"NewInL4D2"				"1"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"				"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"5"
+
+	"MaxPlayerSpeed" 		"220"
+	"WeaponType"			"shotgun"
+	"WeaponPrice"			"1700"
+	"WeaponArmorRatio"		"1.0"
+	"CrosshairMinDistance"		"8"
+	"CrosshairDeltaDistance"	"6"
+	"BuiltRightHanded"		"1"
+	"PlayerAnimationExtension" 	"m3s90"
+	"MuzzleFlashScale"		"1.3"
+	
+	"CanEquipWithShield"	"0"
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"4"
+	"PenetrationPower"			"80"
+	"PenetrationMaxDistance"	"500"
+
+	"Damage"			"88"	// 22
+	"Range"				"7000"
+	"RangeModifier"		"1"	// 0.96
+	"Bullets"			"10"
+	"CycleTime"			"0.5"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Pump Shotgun"
+	"playermodel"			"models/w_models/weapons/w_pumpshotgun_A.mdl"
+	
+	"viewmodel"			"models/v_models/v_shotgun_chrome.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"8"
+	
+	"primary_ammo"			"AMMO_TYPE_SHOTGUN"
+	"secondary_ammo"		"None"
+
+	"weight"			"20"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Shotgun_Chrome.Fire"
+		//"reload"		"Shotgun.WorldReloadShell"
+		//"reload_pump"		"Shotgun.WorldReloadPump"
+		"shoot_incendiary"	"Shotgun_Chrome.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"192"
+				"y"			"192"
+				"width"		"192"
+				"height"	"64"	
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"0"
+				"y"			"128"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-13 -3 -13"
+			Maxs	"26 10 -3"
+		}
+		World
+		{
+			Mins	"-9 -8 -5"
+			Maxs	"28 9 9"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"			"3"
+	"SpreadPerShot"			"2.2"
+	"MaxSpread"			"15"
+	"SpreadDecay"			"7"
+	"MinDuckingSpread"		"1"
+	"MinStandingSpread"		"1.5"
+	"MinInAirSpread"		"2.5"
+	"MaxMovementSpread"		"2.5"
+	"PelletScatterPitch"		"5"
+	"PelletScatterYaw"		"5"
+	"ReloadDuration"		"0.396"
+	"AddonAttachment"		"primary"
+	"team"					"survivor"
+	
+	"Tier"					"2"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"Shotgun_SPAS"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_shotgun_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_autoshotgun"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_shotgun"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"1.5"
+	
+	"DisplayName"			"#L4D_Weapon_Shotgun_SPAS"
+	"DisplayNameAllCaps"	"#L4D_Weapon_Shotgun_SPAS_CAPS"
+	
+	"NewInL4D2"				"1"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"				"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"5"
+
+	"MaxPlayerSpeed" 		"240"
+	"WeaponType" 			"shotgun"
+	"WeaponPrice"			"3000"
+	"WeaponArmorRatio"		"1.0"
+	"CrosshairMinDistance"		"9"
+	"CrosshairDeltaDistance"	"4"
+	"Team"				"ANY"
+	"BuiltRightHanded"		"1"
+	"PlayerAnimationExtension"	"xm1014"
+	"MuzzleFlashScale"		"1.3"
+	
+	"CanEquipWithShield"		"0"
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"8"
+	"PenetrationPower"			"80"
+	"PenetrationMaxDistance"	"5000"
+	"CharacterPenetrationMaxDistance" "300" // Shooting through infected is doesn't count against penetration count out to this range
+
+	"Damage"			"100"
+	"Range"				"8000"
+	"RangeModifier"			"1.5"
+	"Bullets"			"12"
+	"CycleTime"			"0.15"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Auto Shotgun"
+	"playermodel"			"models/w_models/weapons/w_shotgun_spas.mdl"
+	
+	"viewmodel"			"models/v_models/v_shotgun_spas.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
+		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
+		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
+		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+	}
+	
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"12"  //increased from 9
+	
+	"primary_ammo"			"AMMO_TYPE_AUTOSHOTGUN"
+	"secondary_ammo"		"None"
+
+	"weight"			"20"
+	"item_flags"			"0"
+
+	"LoadoutSlots"	"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"AutoShotgun_Spas.Fire"
+		"shoot_incendiary"	"AutoShotgun_Spas.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"256"
+				"y"			"64"
+				"width"		"128"
+				"height"	"64"
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"0"
+				"y"			"128"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-13 -3 -11"
+			Maxs	"29 10 0"
+		}
+		World
+		{
+			Mins	"-4 -8 -4"
+			Maxs	"30 8 6"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"			"0.9"
+	"SpreadPerShot"			"0.32"
+	"MaxSpread"				"24"
+	"SpreadDecay"			"10"
+	"MinDuckingSpread"		"0.6"
+	"MinStandingSpread"		"1.0"
+	"MinInAirSpread"		"1.5"
+	"MaxMovementSpread"		"2.5"
+	"AddonAttachment"		"primary"
+	"Team"					"Survivor"
+	
+	"Tier"					"1"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"SMG"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_smg_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_smg"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_9mm"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"0.3"
+	
+	"DisplayName"			"#L4D_Weapon_SMG"
+	"DisplayNameAllCaps"	"#L4D_Weapon_SMG_CAPS"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"				"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"3"
+	
+	"MaxPlayerSpeed"		"250"
+	"WeaponType"			"smg"
+	"WeaponPrice"			"1500"
+	"WeaponArmorRatio"		"1.0"
+	"CrosshairMinDistance"		"6"
+	"CrosshairDeltaDistance"	"2"
+	"BuiltRightHanded"		"1"
+	"PlayerAnimationExtension"	"mp5"
+	"MuzzleFlashScale"		"1.1"
+
+	
+	"CanEquipWithShield"		"0"
+	
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"2"
+	"PenetrationPower"			"30"
+	"PenetrationMaxDistance"	"0"	// none
+
+	"Damage"			"60"
+	"Range"				"7500"
+	"RangeModifier"			"0.84"
+	"Bullets"			"1"
+	"CycleTime"			"0.07"
+
+	"TimeToIdle"			"2"
+	"IdleInterval"			"20"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"SMG"
+	"playermodel"			"models/w_models/weapons/w_smg_uzi.mdl"
+	
+	"viewmodel"			"models/v_models/v_smg.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
+		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
+		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
+		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"60"
+	
+	"primary_ammo"			"AMMO_TYPE_SMG"
+	"secondary_ammo"		"None"
+
+	"weight"			"25"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"SMG.Fire"
+		"shoot_incendiary"	"SMG.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"0"
+				"y"			"384"
+				"width"		"128"
+				"height"	"64"	
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"384"
+				"y"			"448"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-10 -4 -13"
+			Maxs	"21 9 -1"
+		}
+		World
+		{
+			Mins	"-10 -7 -6"
+			Maxs	"22 8 9"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"			"1.5"
+	"SpreadPerShot"			"1"
+	"MaxSpread"			"15"
+	"SpreadDecay"			"8"
+	"MinDuckingSpread"		"0.05"
+	"MinStandingSpread"		"0.5"
+	"MinInAirSpread"		"1.5"
+	"MaxMovementSpread"		"5"
+	"AddonAttachment"		"primary"
+	"Team"					"Survivor"
+	
+	"Tier"					"2"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"Sniper_Military"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect"		"weapon_muzzle_flash_huntingrifle_FP"
+	
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_huntingrifle_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_huntingrifle"
+	
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_rifle"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"3.5"
+	
+	"DisplayName"				"#L4D_Weapon_Sniper_Military"
+	"DisplayNameAllCaps"		"#L4D_Weapon_Sniper_Military_CAPS"
+	
+	"NewInL4D2"				"1"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"6.0"
+	"MaxAutoAimRange1"				"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"MaxPlayerSpeed"		"210"
+	"WeaponType"			"sniper_rifle"
+	"WeaponPrice"			"4200"
+	"WeaponArmorRatio"		"1.45"
+	"CrosshairMinDistance"		"5"
+	"CrosshairDeltaDistance"	"3"
+	"BuiltRightHanded"		"1"
+	"PlayerAnimationExtension"	"sg550"
+	"MuzzleFlashScale"		"1.6"
+	"MuzzleFlashStyle"		"CS_MUZZLEFLASH_X"
+	"CanEquipWithShield"		"0"
+	
+	"Rumble"			"2"
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"50"
+	"PenetrationPower"			"1000"
+	"PenetrationMaxDistance"	"0"	// none
+	"CharacterPenetrationMaxDistance" "8192" // Shooting through infected is doesn't count against penetration count out to this range
+
+	"Damage"			"750"
+	"Range"				"8192"
+	"RangeModifier"			"1.0"
+	"Bullets"			"1"
+	"CycleTime"			"0.25"
+	"AccuracyDivisor"		"-1"
+	"AccuracyOffset"		"0"
+	"MaxInaccuracy"			"0"
+	"TimeToIdle"			"1.8"
+	"IdleInterval"			"60"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Sniper Military"
+	"playermodel"		"models/w_models/weapons/w_sniper_military.mdl"
+
+	"viewmodel"			"models/v_models/v_sniper_military.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
+		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
+		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
+		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"8"
+	
+	"primary_ammo"			"AMMO_TYPE_SNIPERRIFLE"
+	"secondary_ammo"		"None"
+
+	"weight"			"20"
+	"item_flags"			"0"
+
+	"LoadoutSlots"	"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Sniper_Military.Fire"
+		"special3"			"HuntingRifle.Zoom"
+		"shoot_incendiary"	"Sniper_Military.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet2"
+				"x"			"0"
+				"y"			"192"
+				"width"		"192"
+				"height"	"64"
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"384"
+				"y"			"448"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-3 -3 -12"
+			Maxs	"40 14 -1"
+		}
+		World
+		{
+			Mins	"-7 -8 -3"
+			Maxs	"32 9 9"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"			"1.0"
+	"SpreadPerShot"			"1"
+	"MaxSpread"				"4"
+	"SpreadDecay"			"4"
+	"MinDuckingSpread"		"0.5"
+	"MinStandingSpread"		"1.5"
+	"MinInAirSpread"		"1.5"
+	"MaxMovementSpread"		"2"
+	"DeployDuration"		"0.5"
+	"DualDeployDuration"	"0.65"
+	"AddonAttachment"		"pistol"
+	"Team" 					"Survivor"
+	"PelletScatterPitch"		"10"  //increased accuracy
+	"PelletScatterYaw"		"10"
+	
+	"addon_offset"			"0 0 0"
+	"addon_angles"			"0 0 0"
+	
+	"Tier"					"0"		// valid entries are 0, 1, 2
+	
+	"ResponseRulesName"		"SecondPistol"
+
+	// particle muzzle flash effect to play when fired	
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_pistol_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_pistol"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_9mm"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"0.8"
+	
+	"DisplayName"				"#L4D_Weapon_Pistol"
+	"DisplayNameAllCaps"		"#L4D_Weapon_Pistol_CAPS"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"				"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"MaxPlayerSpeed"		"250"
+	"WeaponType"			"pistol"
+	"WeaponPrice"			"500"
+	"WeaponArmorRatio"		"1.0"
+	"CrosshairMinDistance"		"8"
+	"CrosshairDeltaDistance" 	"3"
+	"BuiltRightHanded" 		"1"
+	"PlayerAnimationExtension" 	"pistol"
+	"MuzzleFlashScale"		"1"
+	
+	"CanEquipWithShield" 		"1"
+
+	"Rumble"			"1"
+	
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"50"
+	"PenetrationPower"			"1000"
+	"PenetrationMaxDistance"	"0"	// none
+
+	"Damage"			"16"
+	"Range"				"9001"
+	"RangeModifier"			"2.75"
+	"GainRange"			"7500"	// range at which to use a gain curve to fall off to zero
+	"Bullets"			"250"
+	"CycleTime"			"0.25"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Pistol"
+	
+	"playermodel"			"models/w_models/weapons/w_pistol_A.mdl"
+	"playermodel_dual"		"models/w_models/weapons/w_pistol_A_dual.mdl"
+
+	"worldmodel"			"models/w_models/weapons/w_pistol_B.mdl"
+	
+	"viewmodel"			"models/v_models/v_pistolA.mdl"
+	"viewmodel_dual"		"models/v_models/v_dual_pistolA.mdl"
+
+	"CharacterViewmodelAddon"
+	{
+		"Coach"				"models/weapons/arms/v_arms_coach_new.mdl"
+		"Mechanic"			"models/weapons/arms/v_arms_mechanic_new.mdl"
+		"Producer"			"models/weapons/arms/v_arms_producer_new.mdl"
+		"Gambler"			"models/weapons/arms/v_arms_gambler_new.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"1"
+	"bucket_position"		"0"
+
+	"clip_size"			"20"
+	
+	"primary_ammo"			"AMMO_TYPE_PISTOL"
+	"secondary_ammo"		"None"
+
+	"weight"			"5"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+
+	SoundData
+ 	{
+  		"single_shot"  "Pistol.Fire"
+		"double_shot"  "Pistol.DualFire"
+ 	}
+	
+// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"256"
+				"y"			"320"
+				"width"		"64"
+				"height"	"64"
+		}
+		"weapon_dual"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"192"
+				"y"			"320"
+				"width"		"64"
+				"height"	"64"
+		}
+		"ammo"
+		{
+				"font"		"DebugFixed"
+				"character"	"A"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-7 -4 -14"
+			Maxs	"24 9 -2"
+		}
+		World
+		{
+			Mins	"-1 -4 -3"
+			Maxs	"17 5 6"
+		}
+	}
+}
+WeaponData
+{
+	// Terror-specific Data --------------------
+	"VerticalPunch"		"1.2"
+	"SpreadPerShot"		"1.25"
+	"MaxSpread"		"8"
+	"SpreadDecay"		"8"
+	"MinDuckingSpread"		"0.5"
+	"MinStandingSpread"		"1"
+	"MinInAirSpread"		"1.5"
+	"MaxMovementSpread"	"2"
+	"AddonAttachment"		"primary"
+	"Team" 					"Survivor"
+	"PelletScatterPitch"		"3.4"  //increased accuracy
+	"PelletScatterYaw"		"3.4"
+	
+	"Tier"					"2"		// valid entries are 0, 1, 2
+	
+	
+	"ResponseRulesName"		"Rifle"
+
+	// particle muzzle flash effect to play when fired
+	"MuzzleFlashEffect_1stPerson"		"weapon_muzzle_flash_assaultrifle_FP"
+	"MuzzleFlashEffect_3rdPerson"		"weapon_muzzle_flash_assaultrifle"
+
+	// model for the shell casing to eject when we fire bullets
+	"EjectBrassEffect"		"weapon_shell_casing_rifle"
+	
+	// Used in the music system when this weapon fires
+	"MusicDynamicSpeed"		"0.35"
+	
+	"DisplayName"				"#L4D_Weapon_AssaultRifle"
+	"DisplayNameAllCaps"		"#L4D_Weapon_AssaultRifle_CAPS"
+
+	"NewInL4D2"				"1"
+
+	// 360 Terror Data
+	"MaxAutoAimDeflection1"			"10.0"
+	"MaxAutoAimRange1"			"0"
+	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
+	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
+	"WeaponAutoAimScale"			"1.0"
+	// End Terror-specific Data ----------------
+
+	"Rumble"			"4"
+
+	"MaxPlayerSpeed" 		"250" 
+	"WeaponType" 			"pistol"
+	"WeaponPrice" 			"8000"
+	"WeaponArmorRatio" 		"1.4"
+	"CrosshairMinDistance" 		"4"
+	"CrosshairDeltaDistance" 	"3"
+	"BuiltRightHanded" 		"1"
+	"PlayerAnimationExtension" 	"m4"
+
+	"CanEquipWithShield"		"0"
+	
+	
+	// Weapon characteristics:
+	"PenetrationNumLayers"		"50"
+	"PenetrationPower"			"1000"
+	"PenetrationMaxDistance"	"0"	// none
+
+	"Damage"			"150"
+	"Range"				"10000"
+	"RangeModifier"			"2.75"
+	"GainRange"			"8500"	// range at which to use a gain curve to fall off to zero
+	"Bullets"			"200"
+	"CycleTime"			"0.09"
+
+	"TimeToIdle"			"1.5"
+	"IdleInterval"			"60"
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Assault Rifle"
+
+	"playermodel"			"models/w_models/weapons/w_rifle_m16a2.mdl"
+	
+	"viewmodel"			"models/v_models/v_rifle.mdl"
+	"CharacterViewmodelAddon"
+	{
+		"Coach"            "models/weapons/arms/v_arms_coach_new.mdl"
+      		"Mechanic"         "models/weapons/arms/v_arms_mechanic_new.mdl"
+      		"Producer"         "models/weapons/arms/v_arms_producer_new.mdl"
+      		"Gambler"         "models/weapons/arms/v_arms_gambler_new.mdl"
+      		"Namvet"         "models/weapons/arms/v_arms_bill.mdl"
+      		"Biker"            "models/weapons/arms/v_arms_francis.mdl"
+      		"Manager"         "models/weapons/arms/v_arms_louis.mdl"
+      		"TeenGirl"         "models/weapons/arms/v_arms_zoey.mdl"
+	}
+
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"			"60"
+	
+	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
+	"secondary_ammo"		"None"
+
+	"weight"			"25"
+	"item_flags"			"0"
+
+	"LoadoutSlots"	"2"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Rifle.Fire"
+		"shoot_incendiary"	"Rifle.FireIncendiary"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"128"
+				"y"			"384"
+				"width"		"192"
+				"height"	"64"	
+		}
+		"ammo"
+		{
+				"file"		"vgui/hud/iconsheet"
+				"x"			"384"
+				"y"			"448"
+				"width"		"64"
+				"height"	"64"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-10 -2 -13"
+			Maxs	"30 10 0"
+		}
+		World
+		{
+			Mins	"-8 -9 -6"
+			Maxs	"29 9 8"
+		}
+	}
+}
+
+		{
+			Mins	"-10 -2 -13"
+			Maxs	"30 10 0"
+		}
+		World
+		{
+			Mins	"-8 -9 -6"
+			Maxs	"29 9 8"
+		}
+	}
+}

@@ -1,0 +1,14 @@
+"AddonInfo"
+{
+
+     addonSteamAppID         550
+     addontitle              "DioBrandDough's Weapon and Player Stats Revamp"
+     addonversion            1.0
+     addontagline            "Only on LOCAL server with YOU as host."
+     addonauthor             "DioBrandDough"
+     addonSteamGroupName     ""
+     addonauthorSteamID      "https://steamcommunity.com/profiles/76561198162446945/"
+     addonContent_Campaign   0
+     addonDescription        "Have Fun."
+
+}

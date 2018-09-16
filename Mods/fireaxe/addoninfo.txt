@@ -1,0 +1,7 @@
+"AddonInfo"
+{
+     addonSteamAppID         550
+     addontitle              "[HUD] Melee - Fire Axe"
+     addonauthor             "Alex_D_Vasilkov"
+     addonDescription        "Soulworker Lily Weapon (?) Changes stats."
+}

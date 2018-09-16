@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+    addonSteamAppID        550
+    addontitle             "Custom Survivor Stats"
+    addonversion           "1.0"
+    addonauthor            "DioBrandDough"
+    addonDescription       "Changes various player stats."
+}

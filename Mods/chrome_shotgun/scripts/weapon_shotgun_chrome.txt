@@ -2,7 +2,7 @@ WeaponData
 {
 	// Terror-specific Data --------------------
 	"VerticalPunch"			"4"
-	"SpreadPerShot"			"1"
+	"SpreadPerShot"			"10"
 	"MaxSpread"			"5"
 	"SpreadDecay"			"5"
 	"MinDuckingSpread"		"0"
@@ -62,10 +62,10 @@ WeaponData
 	"PenetrationMaxDistance"	"500"
 	"CharacterPenetrationMaxDistance" "300" // Shooting through infected is doesn't count against penetration count out to this range
 
-	"Damage"			"93"	// 22
+	"Damage"			"90"	// 22
 	"Range"				"6000"
 	"RangeModifier"		"0.7"	// 0.96
-	"Bullets"			"8"
+	"Bullets"			"10"
 	"CycleTime"			"0.5"
 	
 	// Weapon data is loaded by both the Game and Client DLLs.

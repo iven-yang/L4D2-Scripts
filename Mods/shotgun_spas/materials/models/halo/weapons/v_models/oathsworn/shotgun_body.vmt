@@ -1,0 +1,29 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/halo/weapons/v_models/oathsworn/shotgun_diffuse"
+	"$bumpmap" "models/halo/weapons/v_models/oathsworn/shotgun_normal"
+                "$selfillum" 1
+	"$selfillummask"	"models/halo/weapons/v_models/oathsworn/shotgun_illum"
+
+
+	//"$envmap"	"env_cubemap"
+	"$envmaptint"	"[0 0.05 0.1]"
+
+	"$phong" "1"
+	"$phongboost" "2"
+	"$phongexponent" "5"
+	"$phongexponenttexture" "models/halo/weapons/v_models/oathsworn/shotgun_exp"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges"	"[1 1 1]"
+
+	"$detail" "models/halo/weapons/v_models/oathsworn/paint"
+	"$detailscale" "20"
+	"$detailblendfactor" "5"
+	"$detailblendmode" "0"
+
+
+
+	"$rimlight" "1"
+	"$rimlightexponent" "50"
+	"$rimlightboost" "0.05"
+}

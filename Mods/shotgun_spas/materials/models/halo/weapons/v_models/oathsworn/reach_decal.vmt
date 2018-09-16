@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models/halo/weapons/v_models/oathsworn/kelly_decal"	
+
+	$alphatest 1
+	$allowalphatocoverage 1
+
+	$halflambert 1
+	$nocull 1
+}

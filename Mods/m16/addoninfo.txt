@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+    addonSteamAppID        550
+    addontitle             "Custom HUD icon for Halo Reach MA37 Assault Rifle"
+    addonversion           "1.0"
+    addonauthor            "CCPD"
+    addonDescription       "Replaces the Assault Rifle HUD icon with an icon for Halo Reach MA37 Assault Rifle. Changes stats."
+}

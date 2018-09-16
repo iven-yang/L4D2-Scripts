@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models/halo5/weapons/longshot_ma5d/decals"	
+
+	$alphatest 1
+	$allowalphatocoverage 1
+
+	$halflambert 1
+	$nocull 1
+}

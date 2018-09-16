@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/halo5/weapons/longshot_ma5d/0"
+
+	"$translucent" "1"
+	"$nocull"		"1"
+	"$selfillum" "1"
+	"$selfillummaskscale" "4"
+	"$additive" "1"
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" "2"
+	"$glowcolor" "1"
+	
+
+}

@@ -1,0 +1,7 @@
+"AddonInfo"
+{
+     addonSteamAppID         550
+     addontitle              "[HUD] Melee - Katana"
+     addonauthor             "Alex_D_Vasilkov"
+     addonDescription        "Borderlands Zeros' Sword. Changes stats."
+}

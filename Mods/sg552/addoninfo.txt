@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+    addonSteamAppID        550
+    addontitle             "Halo 5 Longshot MA5D"
+    addonversion           1.0
+    addonauthor            "Danger Wasp, MaxG3D"
+    addonDescription       "The Halo 5 Longshot MA5D Assault rifle on MaxG3D's animations"
+}

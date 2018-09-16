@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+    addonSteamAppID        550
+    addontitle             "Custom HUD icon for Halo 3 SRS99D-S2 AM Sniper Rifle"
+    addonversion           "1.0"
+    addonauthor            "CCPD"
+    addonDescription       "Replaces the Sniper Rifle HUD icon with an icon for Halo 3 SRS99D-S2 AM Sniper Rifle. Changes stats."
+}
