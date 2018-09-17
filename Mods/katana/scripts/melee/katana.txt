@@ -1,7 +1,7 @@
 MeleeWeaponData
 {
 	// Time before you can swing the weapon again
-	"refire_delay"	"0.8"
+	"refire_delay"	"0.35"
 	
 	// Model to show in firstperson
 	"viewmodel"		"models/weapons/melee/v_katana.mdl"
@@ -80,9 +80,9 @@ MeleeWeaponData
 		{
 			"startdir"		"E"
 			"enddir"		"W"
-			"duration"		"1"
-			"starttime"		"0.1"
-			"endtime"		"0.25"
+			"duration"		"0.35"
+			"starttime"		"0.04"
+			"endtime"		"0.07"
 			"activity"		"ACT_VM_HITCENTER"
 			"player_activity"	"ACT_SHOOT_E2W_KATANA"
 			"player_activity_idle"	"ACT_SHOOT_E2W_IDLE_KATANA"
@@ -92,9 +92,9 @@ MeleeWeaponData
 		{
 			"startdir"		"W"
 			"enddir"		"E"
-			"duration"		"1.3"
+			"duration"		"0.45"
 			"starttime"		"0.0"
-			"endtime"		"0.2"
+			"endtime"		"0.1"
 			"activity"		"ACT_VM_HITLEFT"
 			"player_activity"	"ACT_SHOOT_W2E_KATANA"
 			"player_activity_idle"	"ACT_SHOOT_W2E_IDLE_KATANA"
@@ -108,9 +108,9 @@ MeleeWeaponData
 		{
 				"startdir"		"E"
 				"enddir"		"W"
-				"duration"		"1" //37 frames @ 37fps
-				"starttime"		"0.46" //starts at 17
-				"endtime"		".78" //ends at 22
+				"duration"		"0.35" //37 frames @ 37fps
+				"starttime"		"0.1" //starts at 17
+				"endtime"		"0.2" //ends at 22
 				"activity"		"ACT_VM_SWINGHARD"
 				"player_activity"	"ACT_SHOOT_STRONG_BAT"
 				"player_activity_idle"	"ACT_SHOOT_STRONG_IDLE_BAT"
@@ -123,9 +123,9 @@ MeleeWeaponData
 		{
 			"startdir"		"E"
 			"enddir"		"W"
-			"duration"		".73"
-			"starttime"		"0.1"
-			"endtime"		"0.26"
+			"duration"		"0.25"
+			"starttime"		"0.05"
+			"endtime"		"0.1"
 			"activity"		"ACT_VM_SECONDARYATTACK"
 			"player_activity"	"ACT_SHOOT_SECONDARY_BAT"
 			"player_activity_idle"	"ACT_SHOOT_SECONDARY_BAT"

@@ -59,7 +59,7 @@ WeaponData
 	"PenetrationPower"			"50"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"132"
+	"Damage"			"185"
 	"Range"				"6000"
 	"RangeModifier"			"0.97"
 	"GainRange"			"3000"	// range at which to use a gain curve to fall off to zero
@@ -92,7 +92,7 @@ WeaponData
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"50"
+	"clip_size"			"60"
 	
 	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
 	"secondary_ammo"		"None"

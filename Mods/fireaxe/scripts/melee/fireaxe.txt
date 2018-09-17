@@ -1,7 +1,7 @@
 MeleeWeaponData
 {
 	// Time before you can swing the weapon again
-	"refire_delay"	"1.0"
+	"refire_delay"	"0.65"
 	
 	// Model to show in firstperson
 	"viewmodel"		"models/weapons/melee/v_fireaxe.mdl"
@@ -13,7 +13,7 @@ MeleeWeaponData
 	"anim_prefix"	"anim"
 	
 	// Damage per hit
-	"damage"		"1050"
+	"damage"		"1250"
 	
 	// Damage flag value
 	// right now you can enter the integer values, or logical OR them together
@@ -76,9 +76,9 @@ MeleeWeaponData
 		{
 			"startdir"		"E"
 			"enddir"		"W"
-			"duration"		"1.23"
+			"duration"		"1.0"
 			"starttime"		"0.1"
-			"endtime"		"0.33"
+			"endtime"		"0.25"
 			"activity"		"ACT_VM_PRIMARYATTACK"
 			"player_activity"	"ACT_SHOOT_E2W_AXE"
 			"player_activity_idle"	"ACT_SHOOT_E2W_IDLE_AXE"
@@ -88,9 +88,9 @@ MeleeWeaponData
 		{
 			"startdir"		"W"
 			"enddir"		"E"
-			"duration"		"1.23"
+			"duration"		"1.0"
 			"starttime"		"0.1"
-			"endtime"		"0.33"
+			"endtime"		"0.25"
 			"activity"		"ACT_VM_HITLEFT"
 			"player_activity"	"ACT_SHOOT_E2W_AXE"
 			"player_activity_idle"	"ACT_SHOOT_E2W_IDLE_AXE"
@@ -103,9 +103,9 @@ MeleeWeaponData
 		{
 				"startdir"		"N"
 				"enddir"		"S"
-				"duration"		"1.24"
-				"starttime"		"0.35"
-				"endtime"		"0.60"
+				"duration"		"1.0"
+				"starttime"		"0.25"
+				"endtime"		"0.3"
 				"activity"		"ACT_VM_SWINGHARD"
 				"player_activity"	"ACT_SHOOT_STRONG_AXE"
 				"player_activity_idle"	"ACT_SHOOT_STRONG_IDLE_AXE"
@@ -118,9 +118,9 @@ MeleeWeaponData
 		{
 			"startdir"		"E"
 			"enddir"		"W"
-			"duration"		".73"
+			"duration"		".6"
 			"starttime"		"0.1"
-			"endtime"		"0.26"
+			"endtime"		"0.2"
 			"activity"		"ACT_VM_SECONDARYATTACK"
 			"player_activity"	"ACT_SHOOT_SECONDARY_AXE"
 			"player_activity_idle"	"ACT_SHOOT_SECONDARY_AXE"

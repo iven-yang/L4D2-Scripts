@@ -60,10 +60,10 @@ WeaponData
 	"PenetrationMaxDistance"	"500"
 	"CharacterPenetrationMaxDistance" "300" // Shooting through infected is doesn't count against penetration count out to this range
 
-	"Damage"			"75"	// 22
+	"Damage"			"80"	// 22
 	"Range"				"6000"
 	"RangeModifier"		"0.7"	// 0.96
-	"Bullets"			"10"
+	"Bullets"			"12"
 	"CycleTime"			"0.5"
 	
 	// Weapon data is loaded by both the Game and Client DLLs.
@@ -89,7 +89,7 @@ WeaponData
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"8"
+	"clip_size"			"12"
 	
 	"primary_ammo"			"AMMO_TYPE_SHOTGUN"
 	"secondary_ammo"		"None"

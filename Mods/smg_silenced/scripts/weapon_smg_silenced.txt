@@ -62,7 +62,7 @@ WeaponData
 	"PenetrationPower"			"30"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"70"
+	"Damage"			"95"
 	"GainRange"			"900"
 	"Range"				"2200"
 	"RangeModifier"			"0.84"
