@@ -1,14 +1,14 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"1.2"
+	"VerticalPunch"			"0.5"
 	"SpreadPerShot"			"0.75"
-	"MaxSpread"				"30"
-	"SpreadDecay"			"5"
+	"MaxSpread"				"15"
+	"SpreadDecay"			"10"
 	"MinDuckingSpread"		"0.05"
 	"MinStandingSpread"		"0.4"
 	"MinInAirSpread"		"1.5"
-	"MaxMovementSpread"		"5"
+	"MaxMovementSpread"		"3"
 	"AddonAttachment"		"primary"
 	"Team" 					"Survivor"
 	
@@ -34,7 +34,7 @@ WeaponData
 
 	// 360 Terror Data
 	"MaxAutoAimDeflection1"			"10.0"
-	"MaxAutoAimRange1"			"0"
+	"MaxAutoAimRange1"			"10.0"
 	//This value determins how "big" a target is for auto aim. If a target is 10.0 units big then it is considered 10.0*scale.  
 	//You can think about this value controlling a falloff value on distant targets, the smaller the value the harder it is to hit at a distance.
 	"WeaponAutoAimScale"			"1.0"
@@ -59,11 +59,11 @@ WeaponData
 	"PenetrationPower"			"50"
 	"PenetrationMaxDistance"	"0"	// none
 
-	"Damage"			"185"
+	"Damage"			"150"
 	"Range"				"6000"
 	"RangeModifier"			"0.97"
 	"GainRange"			"3000"	// range at which to use a gain curve to fall off to zero
-	"Bullets"			"1"
+	"Bullets"			"6"
 	"CycleTime"			"0.0825"
 
 	"TimeToIdle"			"2"
@@ -92,7 +92,7 @@ WeaponData
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"60"
+	"clip_size"			"180"
 	
 	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
 	"secondary_ammo"		"None"

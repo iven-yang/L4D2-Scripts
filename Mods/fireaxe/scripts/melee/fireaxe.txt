@@ -67,7 +67,7 @@ MeleeWeaponData
 	"player_anim_event"		"0"		// TODO - convert from string to PlayerAnimEvent_t
 	
 	// How long after attacking until the weapon enters its idle animation state
-	"weapon_idle_time"	"1.6"
+	"weapon_idle_time"	"0.5"
 	
 	// Attack animations (primary and secondary)
 	"primaryattacks"

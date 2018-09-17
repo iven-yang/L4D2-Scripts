@@ -70,7 +70,7 @@ MeleeWeaponData
 	"player_anim_event"		"0"		// TODO - convert from string to PlayerAnimEvent_t
 	
 	// How long after attacking until the weapon enters its idle animation state
-	"weapon_idle_time"	"0.8"
+	"weapon_idle_time"	"0.25"
 	
 	// Attack animations (primary and secondary)
 
@@ -80,8 +80,8 @@ MeleeWeaponData
 		{
 			"startdir"		"E"
 			"enddir"		"W"
-			"duration"		"0.35"
-			"starttime"		"0.04"
+			"duration"		"0.25"
+			"starttime"		"0.03"
 			"endtime"		"0.07"
 			"activity"		"ACT_VM_HITCENTER"
 			"player_activity"	"ACT_SHOOT_E2W_KATANA"
@@ -92,7 +92,7 @@ MeleeWeaponData
 		{
 			"startdir"		"W"
 			"enddir"		"E"
-			"duration"		"0.45"
+			"duration"		"0.25"
 			"starttime"		"0.0"
 			"endtime"		"0.1"
 			"activity"		"ACT_VM_HITLEFT"
@@ -108,9 +108,9 @@ MeleeWeaponData
 		{
 				"startdir"		"E"
 				"enddir"		"W"
-				"duration"		"0.35" //37 frames @ 37fps
-				"starttime"		"0.1" //starts at 17
-				"endtime"		"0.2" //ends at 22
+				"duration"		"0.2" //37 frames @ 37fps
+				"starttime"		"0.05" //starts at 17
+				"endtime"		"0.1" //ends at 22
 				"activity"		"ACT_VM_SWINGHARD"
 				"player_activity"	"ACT_SHOOT_STRONG_BAT"
 				"player_activity_idle"	"ACT_SHOOT_STRONG_IDLE_BAT"
@@ -123,7 +123,7 @@ MeleeWeaponData
 		{
 			"startdir"		"E"
 			"enddir"		"W"
-			"duration"		"0.25"
+			"duration"		"0.2"
 			"starttime"		"0.05"
 			"endtime"		"0.1"
 			"activity"		"ACT_VM_SECONDARYATTACK"
