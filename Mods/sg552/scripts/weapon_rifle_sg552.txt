@@ -1,14 +1,14 @@
 WeaponData
 {
 	// Terror-specific Data --------------------
-	"VerticalPunch"			"0.5"
-	"SpreadPerShot"			"0.75"
-	"MaxSpread"				"15"
+	"VerticalPunch"			"1"
+	"SpreadPerShot"			"1.75"
+	"MaxSpread"				"17.5"
 	"SpreadDecay"			"10"
 	"MinDuckingSpread"		"0.05"
 	"MinStandingSpread"		"0.4"
-	"MinInAirSpread"		"1.5"
-	"MaxMovementSpread"		"3"
+	"MinInAirSpread"		"1"
+	"MaxMovementSpread"		"2"
 	"AddonAttachment"		"primary"
 	"Team" 					"Survivor"
 	
@@ -92,7 +92,7 @@ WeaponData
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"180"
+	"clip_size"			"90"
 	
 	"primary_ammo"			"AMMO_TYPE_ASSAULTRIFLE"
 	"secondary_ammo"		"None"
