@@ -2,7 +2,7 @@ WeaponData
 {
 	// Terror-specific Data --------------------
 	"VerticalPunch"			"4"
-	"SpreadPerShot"			"15"
+	"SpreadPerShot"			"14"
 	"MaxSpread"			"5"
 	"SpreadDecay"			"5"
 	"MinDuckingSpread"		"0"
@@ -63,8 +63,8 @@ WeaponData
 	"Damage"			"100"	// 22
 	"Range"				"6000"
 	"RangeModifier"		"0.7"	// 0.96
-	"Bullets"			"12"
-	"CycleTime"			"0.5"
+	"Bullets"			"10"
+	"CycleTime"			"0.4"
 	
 	// Weapon data is loaded by both the Game and Client DLLs.
 	"printname"			"Pump Shotgun"	

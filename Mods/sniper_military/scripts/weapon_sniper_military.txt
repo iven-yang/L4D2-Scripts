@@ -61,7 +61,7 @@ WeaponData
 	"PenetrationMaxDistance"	"0"	// none
 	"CharacterPenetrationMaxDistance" "8192" // Shooting through infected is doesn't count against penetration count out to this range
 
-	"Damage"			"1500"
+	"Damage"			"1600"
 	"Range"				"8192"
 	"RangeModifier"			"1.0"
 	"Bullets"			"1"
@@ -94,7 +94,7 @@ WeaponData
 	"bucket"			"0"
 	"bucket_position"		"0"
 
-	"clip_size"			"8"
+	"clip_size"			"4"
 	
 	"primary_ammo"			"AMMO_TYPE_SNIPERRIFLE"
 	"secondary_ammo"		"None"
